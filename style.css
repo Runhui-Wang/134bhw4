@@ -1,0 +1,106 @@
+/* Set default font family and size */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 100vh;
+    max-width: 100vh;
+    margin: auto;
+    text-align: center;
+    background-image: url("bgc.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Style headings */
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'BioRhyme', serif;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  .row {
+    display: flex;
+    flex-direction:row;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .row>p {
+    margin-right: 20px;
+    max-width: 20ch;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .row>p:last-child {
+    margin-right: 0;
+  }
+  /* Style paragraphs */
+  p {
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  
+  /* Style links */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  li {
+    /*text-align: center;*/
+    list-style-position: inside;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* For very small screens (phones) */
+    @media (max-width: 480px) {
+    img {
+      width: 15%;
+    }
+  }
+  
+  /* For tablets or restrictive laptops */
+  @media (min-width: 481px) and (max-width: 1024px) {
+    img {
+      width: 30%;
+    }
+  }
+  
+  /* For desktops */
+  @media (min-width: 1025px) {
+    img {
+      width: 50%;
+    }
+  }
+  
+  .adiv {
+    width: 100%;
+    margin-top:1000px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .adiv:hover {
+    transform: scale(1.2);
+    background-color: red;
+  }
