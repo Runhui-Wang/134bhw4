@@ -95,12 +95,10 @@ body {
   }
   
   .adiv {
-    width: 100%;
-    margin-top:1000px;
-    transition: all 0.5s ease-in-out;
+    transition: all 1.0s ease-in-out;
   }
   
   .adiv:hover {
     transform: scale(1.2);
-    background-color: red;
+    background-color: lightcoral;
   }
