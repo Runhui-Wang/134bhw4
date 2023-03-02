@@ -102,3 +102,9 @@ body {
     transform: scale(1.2);
     background-color: lightcoral;
   }
+
+  table{
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: 370px;
+  }

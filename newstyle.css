@@ -1,0 +1,68 @@
+/* Set default font family and size */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 100vh;
+    max-width: 100vh;
+    margin: auto;
+    text-align: center;
+    background-image: url("bgc.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Style headings */
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'BioRhyme', serif;
+  }
+  
+  /* Style paragraphs */
+  p {
+    line-height: 1.5;
+    margin-bottom: 16px;
+    font-family: 'Raleway', sans-serif;
+    
+
+  }
+  #postList{
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 5px;
+    text-align:center;
+    
+  }
+  
+  li {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+
+/* CSS */
+button {
+    background-color: plum;
+    border: none;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+}
+
+button:hover {
+    background-color: #0062cc;
+    cursor: pointer;
+  }
+
+  
+  

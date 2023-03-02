@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Native Dialogs</title>
+</head>
+<body>
+  <h1>Native Dialogs</h1>
+  <button id="alert">Alert</button>
+  <button id="confirm">Confirm</button>
+  <button id="prompt">Prompt</button>
+  <button id="safer-prompt">Safer Prompt</button>
+  <output>OUTPUT</output>
+  <br><br>
+  <output></output>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@2.3.2/dist/purify.min.js"></script>
+  <script>
+    const alertBtn = document.getElementById('alert');
+    const confirmBtn = document.getElementById('confirm');
+    const promptBtn = document.getElementById('prompt');
+    const saferPromptBtn = document.getElementById('safer-prompt');
+    const output = document.querySelector('output');
+    
+    alertBtn.addEventListener('click', () => {
+      window.alert('This is a built-in alert dialog.');
+    });
+
+    confirmBtn.addEventListener('click', () => {
+      const result = window.confirm('Do you want to proceed?');
+      output.innerHTML = `The value returned by the confirm method is: ${result}`;
+    });
+
+    promptBtn.addEventListener('click', () => {
+      const result = window.prompt('Please enter text:');
+      if (result === null) {
+        output.innerHTML = 'User didn’t enter anything';
+      } else {
+        output.innerHTML = `text:${result}!`;
+      }
+    });
+
+    saferPromptBtn.addEventListener('click', () => {
+      const result = window.prompt('Please enter text:');
+      const clean = DOMPurify.sanitize(result);
+      if (result === null) {
+        output.innerHTML = 'User didn’t enter anything';
+      } else {
+        output.innerHTML = `text:${result}!`;
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Native Dialogs</title>
+</head>
+<body>
+  <h1>Native Dialogs</h1>
+  <button id="alert">Alert</button>
+  <button id="confirm">Confirm</button>
+  <button id="prompt">Prompt</button>
+  
+  <dialog id = "alertDialog">
+    <form method="dialog">
+        <p>Alert!~</p>
+        <button>Ok</button>
+        <button>Cancel</button>
+    </form>
+  </dialog>
+  <dialog id = "confirmDialog">
+    <form method="dialog">
+        <p>Confirm</p>
+        <button value="1">Ok</button>
+        <button value="0">Cancel</button>
+    </form>
+  </dialog>
+  <dialog id = "promptDialog">
+    <form method="dialog">
+        <p>Enter Text!~</p>
+        <input type="text">
+        <button>Ok</button>
+        <button value="clprompt">Cancel</button>
+    </form>
+  </dialog>
+  <output>OUTPUT</output>
+  <br><br>
+  <output></output>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@2.3.2/dist/purify.min.js"></script>
+  <script src="styledposts.js"></script>
+</body>
+</html>

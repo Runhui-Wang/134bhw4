@@ -9,6 +9,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&display=swap" rel="stylesheet">  
         <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script src="portfolio.js"></script>
     </head>
     <body>
         <header>
@@ -30,15 +32,41 @@
                     <p>C++ Project</p>
                     <p>Python Project</p>
                     <p>Java Project</p>
+                    <p>MatLab Project</p>
                 </div>
             </aside>
             <section>
-                <div class="row">
-                    <p>C++ is a high-level general-purpose programming language created by Danish computer scientist Bjarne Stroustrup and first released in 1985 as an extension of the C programming language, or "C with Classes". The language has expanded significantly over time, and modern C++ now has object-oriented, generic, and functional features in addition to facilities for low-level memory manipulation.</p>
-                    <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.
-
-                        Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming.</p>
-                    <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need to recompile.</p>
+                <table>
+                    <tr>
+                        <td><label for="projects" class="align-M">Project List</label>
+                            <select id="pjs">
+                                <option>select a project</option>
+                                <optgroup label="Projects">
+                                    <option value="c project">c project</option>
+                                    <option value="c++ project">c++ project</option>
+                                    <option value="Python project">Python project</option>
+                                    <option value="MatLab project">MatLab project</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                        <td><button id="cc" onclick="handleClick()">Confirm</button></td>
+                    </tr>
+                </table>
+                <div id="c++" style="text-align: center; display: none;">
+                    <h3>Introduce:</h3><p> This is my c++ project .....</p><br>
+                    <p  style="text-align: center;"><img class="img_p" src="trash.png" alt="c++1.png"></p>
+                </div>
+                <div id="c" style="text-align: center; display: none;">
+                    <h3>Introduce:</h3><p> This is my c project .....</p><br>
+                    <p  style="text-align: center;"><img class="img_p" src="trash.png" alt="c++2.png"></p>
+                </div>
+                <div id="python" style="text-align: center; display: none;">
+                    <h3>Introduce:</h3><p> This is my python project.....</p><br>
+                    <p  style="text-align: center;"><img class="img_p" src="trash.png" alt="python1.png"></p>
+                </div>
+                <div id="matlab" style="text-align: center; display: none;">
+                    <h3>Introduce:</h3><p> This is my matlab project .....</p><br>
+                    <p  style="text-align: center;"><img class="img_p" src="trash.png" alt="python2.png"></p>
                 </div>
                 <br>
                 <hr>
@@ -48,6 +76,10 @@
                     <a href="https://www.github.com">GitHub</a>
                 </nav>
             </section>        
+            <blockquote class="twitter-tweet tw-align-center">
+                    <a href="https://twitter.com/nature_forum/status/1628791177494290435">May 5, 2014</a>
+            </blockquote>
+            
         </main>
         <footer>
             
