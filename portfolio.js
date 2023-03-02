@@ -29,7 +29,7 @@ function read_projects(){
         document.getElementById("c++").style.display = "none";
         document.getElementById("c").style.display = "none";
         document.getElementById("python").style.display = "none";
-        document.getElementById("matlab").style.display = "initial";
+        document.getElementById("matlab").style.display = "none";
     }
 }
 function handleClick() {
