@@ -1,7 +1,7 @@
 var crud = new function() {
     // Examples
     this.blogs = ["Webdev", "Javascript", "DOM"];
-    this.times = ["1997", "1980", "1983"];
+    this.times = ["1921/23/23", "2022/98/65", "1983/85/12"];
     this.summarys = ["webdev", "javascript", "dom"];
     
     // Stores current index 
